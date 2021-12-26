@@ -5,11 +5,13 @@ import sqlite3
 
 
 class Ui_MainWindow_HlavniMenu(object):
-    
+
 
     def pomocnafunkce(self):
 
         #funkce pro zjištění id vybraného políčka v tabulce
+
+        # když vrátí true => chyba
 
         vybraneJmeno = str(self.tableWidget.currentRow())
 
@@ -21,6 +23,7 @@ class Ui_MainWindow_HlavniMenu(object):
             try:
 
                 idVybranehoJmena = str(self.tableWidget.item(vybraneJmeno, 4).text())
+
 
                 return str(idVybranehoJmena)
 

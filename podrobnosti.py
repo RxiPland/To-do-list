@@ -225,7 +225,7 @@ class Ui_MainWindow_Podrobnosti(object):
 
 
         self.lineEdit_6 = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_6.setGeometry(QtCore.QRect(60, 490, 131, 31))
+        self.lineEdit_6.setGeometry(QtCore.QRect(60, 490, 50, 31))
         font = QtGui.QFont()
         font.setPointSize(10)
         self.lineEdit_6.setFont(font)
@@ -265,7 +265,7 @@ class Ui_MainWindow_Podrobnosti(object):
         datum2 = date.strftime(datum1, "%d.%m.%Y")
 
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Podrobnosti o: "))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Podrobnosti"))
         self.pushButton.setText(_translate("MainWindow", "Odejít"))
         self.label.setText(_translate("MainWindow", "Popis:"))
         self.label_2.setText(_translate("MainWindow", "Název:"))

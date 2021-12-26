@@ -1,4 +1,3 @@
-from typing import overload
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 import webbrowser
@@ -28,7 +27,7 @@ class Ui_MainWindow_nastaveni(object):
 
         # otevře github se zdrojovým kódem
 
-        webbrowser.open("https://github.com/RxiPland")
+        webbrowser.open("https://github.com/RxiPland/to-do-list")
 
 
     def napovedaStaraDatabaze (self):
