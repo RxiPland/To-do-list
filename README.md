@@ -1,6 +1,6 @@
 # To do list
 
-Pro spuštění programu slouží main.py
+Pro spuštění celého programu slouží main.py
 
 
 # Použité knihovny:
