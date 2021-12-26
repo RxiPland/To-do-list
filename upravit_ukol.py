@@ -51,27 +51,12 @@ class Ui_MainWindow_upravit_ukol(object):
 
             self.dateEdit.setHidden(False)
 
-            self.checkBox_6.setHidden(False)
-
-            datumZadaniChecked2 = self.checkBox_6.isChecked()
-
-            if datumZadaniChecked2 == True:
-
-                self.timeEdit.setHidden(False)
-
-            else:
-
-                self.timeEdit.setHidden(True)
 
         else:
 
-            self.checkBox_6.setChecked(False)
 
             self.dateEdit.setHidden(True)
 
-            self.checkBox_6.setHidden(True)
-
-            self.timeEdit.setHidden(True)
 
     
     def hideDatumOdevzdani(self):
@@ -84,27 +69,11 @@ class Ui_MainWindow_upravit_ukol(object):
 
             self.dateEdit_2.setHidden(False)
 
-            self.checkBox_7.setHidden(False)
-
-            datumOdevzdaniChecked2 = self.checkBox_7.isChecked()
-
-            if datumOdevzdaniChecked2 == True:
-
-                self.timeEdit_2.setHidden(False)
-
-            else:
-
-                self.timeEdit_2.setHidden(True)
 
         else:
 
-            self.checkBox_7.setChecked(False)
 
             self.dateEdit_2.setHidden(True)
-
-            self.checkBox_7.setHidden(True)
-
-            self.timeEdit_2.setHidden(True)
 
 
     def schovatDulezitost(self):
@@ -305,9 +274,6 @@ class Ui_MainWindow_upravit_ukol(object):
 
                         datum_zadani = QDate(rok, mesic, den)
 
-                        self.checkBox_6.setChecked(False)
-
-
 
 
                 if word == potrebneData[2]:
@@ -357,12 +323,10 @@ class Ui_MainWindow_upravit_ukol(object):
                             datum_odevzdani = QDate(rok, mesic, den)
 
                             self.checkBox.setChecked(True)
-                            self.checkBox_7.setChecked(False)
 
                     except:
 
                         self.checkBox.setChecked(False)
-                        self.checkBox_7.setChecked(False)
 
 
                 if word == potrebneData[1]:
@@ -448,9 +412,6 @@ class Ui_MainWindow_upravit_ukol(object):
 
         self.dateEdit.setDate(datum_zadani)
 
-        if datum_zadani != "":
-
-            self.checkBox_6.setHidden(False)
 
         zaskrknuto1 = self.checkBox.isChecked()
 
@@ -458,7 +419,6 @@ class Ui_MainWindow_upravit_ukol(object):
 
             self.dateEdit_2.setDate(datum_odevzdani)
 
-            self.checkBox_7.setHidden(False)
 
 
         if dulezitost != "":
@@ -613,7 +573,7 @@ class Ui_MainWindow_upravit_ukol(object):
                     sqliteConnection = sqlite3.connect('databaze.db')
                     cursor = sqliteConnection.cursor()
 
-                    for i in range(6):
+                    for i in range(7):
                     
                         promenna = list_promennych[i]
                         sloupce = list_sloupcu[i]
@@ -833,22 +793,6 @@ class Ui_MainWindow_upravit_ukol(object):
         self.checkBox_5.stateChanged.connect(self.schovatPostup)
 
 
-        self.checkBox_6 = QtWidgets.QCheckBox(self.centralwidget)
-        self.checkBox_6.setGeometry(QtCore.QRect(280, 115, 121, 20))
-        self.checkBox_6.setChecked(False)
-        self.checkBox_6.setObjectName("checkBox_6")
-        self.checkBox_6.stateChanged.connect(self.hideDatumZadani)
-        self.checkBox_6.setHidden(True)
-
-
-        self.checkBox_7 = QtWidgets.QCheckBox(self.centralwidget)
-        self.checkBox_7.setGeometry(QtCore.QRect(280, 205, 121, 20))
-        self.checkBox_7.setChecked(False)
-        self.checkBox_7.setObjectName("checkBox_7")
-        self.checkBox_7.stateChanged.connect(self.hideDatumOdevzdani)
-        self.checkBox_7.setHidden(True)
-
-
         self.comboBox = QtWidgets.QComboBox(self.centralwidget)
         self.comboBox.setGeometry(QtCore.QRect(30, 330, 181, 31))
         font = QtGui.QFont()
@@ -890,24 +834,6 @@ class Ui_MainWindow_upravit_ukol(object):
         self.spinBox.setHidden(True)
 
         self.spinBox.valueChanged.connect(self.NastavitProcenta)
-
-
-        self.timeEdit = QtWidgets.QTimeEdit(self.centralwidget)
-        self.timeEdit.setGeometry(QtCore.QRect(280, 145, 111, 31))
-        font = QtGui.QFont()
-        font.setPointSize(10)
-        self.timeEdit.setFont(font)
-        self.timeEdit.setObjectName("timeEdit")
-        self.timeEdit.setHidden(True)
-
-
-        self.timeEdit_2 = QtWidgets.QTimeEdit(self.centralwidget)
-        self.timeEdit_2.setGeometry(QtCore.QRect(280, 235, 111, 31))
-        font = QtGui.QFont()
-        font.setPointSize(10)
-        self.timeEdit_2.setFont(font)
-        self.timeEdit_2.setObjectName("timeEdit_2")
-        self.timeEdit_2.setHidden(True)
 
 
         self.progressBar = QtWidgets.QProgressBar(self.centralwidget)
@@ -966,8 +892,6 @@ class Ui_MainWindow_upravit_ukol(object):
         self.comboBox_2.setItemText(4, _translate("MainWindow", "0%"))
         self.comboBox_2.setItemText(5, _translate("MainWindow", "Vlastní"))
         self.comboBox_2.setCurrentText("0%")
-        self.checkBox_6.setText(_translate("MainWindow", "Povolit čas"))
-        self.checkBox_7.setText(_translate("MainWindow", "Povolit čas"))
         self.pushButton_5.setText(_translate("MainWindow", "Náhodné"))
         self.pushButton_6.setText(_translate("MainWindow", "?"))
         self.label_8.setText(_translate("MainWindow", "Dnešní datum: " + datum2))
