@@ -11,7 +11,7 @@ class Ui_MainWindow_PridatUkol(object):
 
     def Vycistit(self):
 
-        #vyčistí se všechna pole v přidání úkolu¨
+        #vyčistí se všechna pole v přidání úkolu
         #okno se zavře
 
         self.lineEdit.clear()
