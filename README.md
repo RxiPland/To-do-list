@@ -4,10 +4,18 @@ Pro spuštění celého programu slouží main.py
 
 #
 Odkaz pro stažení programu v exe (64bit windows) [stáhnout](https://drive.google.com/drive/folders/1Wky6r_Jhkdm84yXeLLapqQqHHwlg20mA?usp=sharing) <br />Heslo pro otevření 7zip souboru: `2021`
+<br />
+<br />
+(Byl jsem nucen soubor zašifrovat heslem, protože google disk to z prevence označoval jako potenciálně nebezpečné)
 #
 
 Je to program, který slouží pro zapisování úkolů. Ke každýmu úkolu lze přidat informace jako např. datum odevzdání, důležitost a další... Dále lze pak jednotlivé úkoly mazat nebo upravovat. Pro zobrazení detailů o úkolu stačí kliknout na řádek v tabulce s úkolem, který chcete vidět a kliknout na podrobnosti. V nastavení je pak možné si měnit primární klíč nebo celou databázi i s úkoly smazat.
 
+#
+
+Bylo by vhodné dát program do složky, protože se na stejném místě vytvoří databáze.
+
+#
 
 # Použité knihovny:
 ```
