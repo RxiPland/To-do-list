@@ -3,7 +3,7 @@
 Pro spuštění celého programu slouží main.py
 
 #
-Odkaz pro stažení programu v exe (64bit windows) [stáhnout](https://github.com/RxiPland/To-do-list/releases/download/v1.0/to_do_list.exe)
+Odkaz pro stažení programu v exe (64bit windows) [stáhnout](https://github.com/RxiPland/To-do-list/releases/download/1.0/to_do_list.exe)
 <br/>
 <br/>
 `8edf74a044f4f3493528be42bec3d44e24ae465de0a495d666d501d0987542da` (SHA256)
