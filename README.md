@@ -3,10 +3,10 @@
 Pro spuštění celého programu slouží main.py
 
 #
-Odkaz pro stažení programu v exe (64bit windows) [stáhnout](https://github.com/RxiPland/To-do-list/releases/download/v1.0.0/to_do_list.exe)
+Odkaz pro stažení programu v exe (64bit windows) [stáhnout](https://github.com/RxiPland/To-do-list/releases/download/v1.0.1/to_do_list.exe)
 <br/>
 <br/>
-`8edf74a044f4f3493528be42bec3d44e24ae465de0a495d666d501d0987542da` (SHA256)
+`6d213e9a4a2a9ffaea3a0948613ee5e8b1c73c06d260153bf7dae012cf4d57bf` (SHA256)
 #
 
 Je to program, který slouží pro zapisování úkolů. Ke každýmu úkolu lze přidat informace jako např. datum odevzdání, důležitost a další... Dále lze pak jednotlivé úkoly mazat nebo upravovat. Pro zobrazení detailů o úkolu stačí kliknout na řádek v tabulce s úkolem, který chcete vidět a kliknout na podrobnosti. V nastavení je pak možné si měnit primární klíč nebo celou databázi i s úkoly smazat.
