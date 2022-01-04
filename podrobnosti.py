@@ -94,6 +94,10 @@ class Ui_MainWindow_Podrobnosti(object):
 
                 udaje = vysledek1[0][0]
 
+                if udaje == "CODE1ZADNYPOPIS":
+
+                    udaje = ""
+
                 self.plaintextEdit.setPlainText(udaje)
 
 
