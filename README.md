@@ -20,8 +20,6 @@ Bylo by vhodné dát program do složky, protože se na stejném místě vytvoř
 # Použité knihovny:
 ```
 pip install PyQt5
-pip install db-sqlite3
-pip install random2
 ```
 
 # Náhled:
