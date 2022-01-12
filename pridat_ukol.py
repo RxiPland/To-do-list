@@ -523,13 +523,3 @@ class Ui_MainWindow_PridatUkol(object):
         self.checkBox.setText(_translate("MainWindow", "Povolit"))
         self.checkBox_2.setText(_translate("MainWindow", "Povolit"))
         self.checkBox_3.setText(_translate("MainWindow", "Povolit"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow_PridatUkol()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())

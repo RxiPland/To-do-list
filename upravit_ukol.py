@@ -895,13 +895,3 @@ class Ui_MainWindow_upravit_ukol(object):
         self.pushButton_5.setText(_translate("MainWindow", "Náhodné"))
         self.pushButton_6.setText(_translate("MainWindow", "?"))
         self.label_8.setText(_translate("MainWindow", "Dnešní datum: " + datum2))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow_upravit_ukol()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())

@@ -279,13 +279,3 @@ class Ui_MainWindow_Podrobnosti(object):
         self.label_6.setText(_translate("MainWindow", "Postup:"))
         self.label_7.setText(_translate("MainWindow", "ID:"))
         self.label_8.setText(_translate("MainWindow", "Dnešní datum: " + datum2))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow_Podrobnosti()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())

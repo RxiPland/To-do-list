@@ -351,13 +351,3 @@ class Ui_MainWindow_nastaveni(object):
         self.comboBox.setItemText(1, _translate("MainWindow", "Písmena"))
         self.pushButton_7.setText(_translate("MainWindow", "?"))
         self.pushButton_3.setText(_translate("MainWindow", "Zdrojový kód"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow_nastaveni()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())

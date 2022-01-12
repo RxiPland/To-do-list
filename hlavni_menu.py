@@ -219,13 +219,3 @@ class Ui_MainWindow_HlavniMenu(object):
         self.pushButton_5.setText(_translate("MainWindow", "Upravit vybraný úkol"))
         self.pushButton_6.setText(_translate("MainWindow", "Více"))
         self.label.setText(_translate("MainWindow", "Dnešní datum: " + datum2))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow_HlavniMenu()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
