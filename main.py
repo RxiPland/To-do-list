@@ -1,5 +1,7 @@
 # Udělal RxiPland
 
+# python 3.9.9
+
 # 26.12.2021
 
 
